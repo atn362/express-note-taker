@@ -6,7 +6,6 @@ function getNotes() {
 
     let notes = JSON.parse(data);
 
-    // Give each note an ID that matches its index (this gets run for every time the page is refreshed)
     for (let i = 0; i < notes.length; i++) {
         notes[i].id = '' + i;
     }
