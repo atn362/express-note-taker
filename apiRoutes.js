@@ -1,6 +1,7 @@
 var fs = require("fs");
 var notesData = getNotes();
 
+//function to parse data to json in the db file and a create unique ID with loop 
 function getNotes() {
     let data = fs.readFileSync('./db/db.json', 'utf8');
 
@@ -15,6 +16,7 @@ function getNotes() {
 
 module.exports = function (app) {
 
+//calls notes api to post the data then delete it 
     app.get("/api/notes", function (req, res) {
         notesData = getNotes();
         res.json(notesData);
@@ -25,7 +27,7 @@ module.exports = function (app) {
         fs.writeFileSync('./db/db.json', JSON.stringify(notesData), 'utf8');
         res.json(true);
     });
-
+    //calls the note api and deletes it by referencing its id
     app.delete("/api/notes/:id", function (req, res) {
         const requestID = req.params.id;
         console.log(requestID);
