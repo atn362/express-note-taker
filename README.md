@@ -1,130 +1,47 @@
-# 11 Express.js: Note Taker
 
-## Your Task
+  
+# Title 
 
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+Express Note Taker Application
 
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+# Table of Contents 
+* [Title](#title)
+* [Description](#description)
+* [Images](#images)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contribution](#contribution)
+* [Tests](#tests)
+* [Questions](#questions)
 
+# Description
 
-## User Story
-
-```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
-
-
-## Acceptance Criteria
-
-```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-```
+This application utilizes node and express to link a back end server to a set of  front end  html files which is able to take commands in the form of note titles and listed tasks, display them on the html page and convert them to a json file in the db folder.  Once in the db folder it is rendered as a json file with the title text and id.  The list items can also be deleted using the red trash can icon. 
 
 
-## Mock-Up
+# Images
 
-The following images show the web application's appearance and functionality: 
+![terminal](https://user-images.githubusercontent.com/77468756/116157790-30062d00-a6b3-11eb-8e3a-e6977c21fcc5.png)
+![note-taker](https://user-images.githubusercontent.com/77468756/116157798-32688700-a6b3-11eb-912e-18700d09b36f.png)
+![notes](https://user-images.githubusercontent.com/77468756/116157802-34cae100-a6b3-11eb-8769-c42ff35422ab.png)
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+# Installation
+What is needed to install this application? The user will run the node server command in the terminal.  Once it has run, an http:localhost address will appear with the specified port, in this case 3000.  Once the user holds the command key and clicks the port url, it will open in a new window in the browser, where the user can interact with it as they would any other webpage/ application.
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+# Usage
+In order to use this app, run the app in the: Typing in the command node server
 
+# License
+Which license have you chosen for this project? Licensed under the MIT badge/link.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[License: MIT](https://opensource.org/licenses/MIT)
 
-## Getting Started
+# Contribution
+​Who was involved in contributing to this project? Just myself with some excellent assistance from my fellow students whom we worked together in a study group a few times.
 
-The application should have a `db.json` file on the back end that will be used to store and retrieve notes using the `fs` module.
+# Tests
+The following is needed to run the test: No tests were required for this project.
 
-The following HTML routes should be created:
-
-* `GET /notes` should return the `notes.html` file.
-
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into `npm` packages that could do this for you).
-
-
-## Bonus
-
-You haven’t learned how to handle DELETE requests, but this application has that functionality in the front end. As a bonus, see if you can add the DELETE route to the application using the following guideline:
-
-* `DELETE /api/notes/:id` should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application front end must connect to an Express.js back end.
-
-  * Application back end must store notes with unique IDs in a JSON file.
-
-  * Application must be deployed to Heroku.
-
-
-### Deployment: 36%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-
-### Application Quality: 11%
-
-* Application console is free of errors.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-### Bonus: +10 Points
-
-* Application allows users to delete notes.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+# Questions
+If you have any questions about the repo, open an issue or contact my git hub account at "www.github.com/atn362" or  directly at : atn362@gmail.com.
