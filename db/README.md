@@ -4,20 +4,27 @@
 
 Express Note Taker Application
 
-
-
-# Description
-
-This application utiziles node and express to link a back end server to a set of  front end  html files which is able to take commands in the form of note titles and listed tasks, display them on the html page and convert them to a json file in the db folder.  Once in the db folder it is rendered as a json file with the title text and id.  The list items can also be deleted using the red trash can icon. 
-
 # Table of Contents 
 * [Title](#title)
+* [Description](#description)
+* [Images](#images)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contribution](#contribution)
 * [Tests](#tests)
 * [Questions](#questions)
+
+# Description
+
+This application utilizes node and express to link a back end server to a set of  front end  html files which is able to take commands in the form of note titles and listed tasks, display them on the html page and convert them to a json file in the db folder.  Once in the db folder it is rendered as a json file with the title text and id.  The list items can also be deleted using the red trash can icon. 
+
+
+# Images
+
+![terminal](https://user-images.githubusercontent.com/77468756/116157790-30062d00-a6b3-11eb-8e3a-e6977c21fcc5.png)
+![note-taker](https://user-images.githubusercontent.com/77468756/116157798-32688700-a6b3-11eb-912e-18700d09b36f.png)
+![notes](https://user-images.githubusercontent.com/77468756/116157802-34cae100-a6b3-11eb-8769-c42ff35422ab.png)
 
 # Installation
 What is needed to install this application? The user will run the node server command in the terminal.  Once it has run, an http:localhost address will appear with the specified port, in this case 3000.  Once the user holds the command key and clicks the port url, it will open in a new window in the browser, where the user can interact with it as they would any other webpage/ application.
