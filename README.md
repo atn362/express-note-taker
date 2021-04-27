@@ -17,7 +17,7 @@ Express Note Taker Application
 
 # Description
 
-This application utilizes node and express to link a back end server to a set of  front end  html files which is able to take commands in the form of note titles and listed tasks, display them on the html page and convert them to a json file in the db folder.  Once in the db folder it is rendered as a json file with the title text and id.  The list items can also be deleted using the red trash can icon. 
+This application utilizes node and express to link a back end server to a set of  front end  html files which is able to take commands in the form of note titles and listed tasks, display them on the html page and convert them to a json file in the db folder.  Once in the db folder it is rendered as a json file with the title text and id.  The list items can also be deleted using the red trash can icon. Also added a print button for use in the future when making lists and notes.
 
 
 # Images
