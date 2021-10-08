@@ -2,6 +2,10 @@
   
 # Title 
 
+# Deployed URL
+
+https://mysterious-escarpment-41652.herokuapp.com/
+
 Express Note Taker Application
 
 # Table of Contents 
